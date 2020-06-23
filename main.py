@@ -1,10 +1,7 @@
 import time
 
-
-
 #Getting what the user wants touse
 Modes = int(input("What do you want to use?\n1)Timer\n2)Stopwatch\n"))
-
 
 
 #Defining the timer
@@ -17,13 +14,12 @@ def timer():
     print(time_set)
 
 
-
 #This is defining the Stop Watch
 def StopWatch():
   time_count = 0 #Sets the time to 0
   start_stop = int(input('Press 1 to start and 2 to stop\n'))#Ask if the user wants to start
   
-  if start_stop == 1: #If user choose option 1, the code will add one
+  if start_stop == 1: #If user choose option 1, the code will add one second a time
     while start_stop != 2: 
       time_count = time_count + 1
       print(time_count)
